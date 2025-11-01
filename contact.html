@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Tienda Air Shoes </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+        <header class="container-fluid p-3 d-flex align-items-center position-relative">
+            <img src="./assets/img/logo.jpg" alt="logoAirShoes">
+            <h1 class="fw-bolder position-absolute start-50 translate-middle-x">Air Shoes</h1>
+        </header>
+          <!-- Start of the navbar -->
+          
+          <nav class="container-fluid p-3 align-items-center" id="navbar">
+
+          <button type="button" class="btn btn-light fw-bold text-wrap py-1 me-3" id="home">
+            <img src="./assets/img/home.svg">
+            Inicio
+          </button>
+          <button type="button" class="btn btn-light fw-bold text-wrap py-1 me-3" id="products">
+            <img src="./assets/img/product.svg">
+            Productos
+          </button>
+          <button type="button" class="btn btn-light fw-bold text-wrap py-1 me-auto" id="contact">
+            <img src="./assets/img/contact.svg">
+            Contáctanos
+          </button>
+
+          <!-- Start of searchbar by BS5-->
+              <form class="d-flex" role="search" id="searchbar">
+                <button class="me-2" type="submit" id="search">
+                  <img src="./assets/img/search.svg">
+                </button>
+                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search"/>
+              </form>
+          <!-- End of searchbar by BS5-->
+        
+          </nav>
+
+          <!-- End of the navbar -->
+
+          <!-- Start of the hide and show navbar button-->
+
+          <div class="container-fluid p-2" id="handsnavbar">
+            <button class="boton">
+              <img src="./assets/img/arrow.svg">
+            </button>
+          </div>
+
+        <main class="container-fluid text-center p-2">
+            <p class="fw-bold" id="aboutus"> Sobre nosotros </p>
+            <p class="pb-3" id="about"> Somos una distribuidora de venta de zapatos de excelente calidad, brindamos una atención personalizada y en busca de oportunidades de crecimiento favoreciendo siempre a nuestros clientes. </p>
+            
+
+            <div class="row align-items-center justify-content-between px-5 mx-0">
+                    <!-- Redes sociales -->
+                <div class="col-sm-6 d-flex flex-column align-items-start">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/instagram.svg" alt="Instagram" class="me-3">
+                    <p class="fs-3 fw-semibold mb-0 textors">@AirShoesStore</p>
+                  </div>
+              
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/whatsapp.svg" alt="WhatsApp" class="me-3">
+                    <p class="fs-3 fw-semibold mb-0 textors">+57 314 349 9547</p>
+                  </div>
+              
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/img/email.svg" alt="Correo" class="me-3">
+                    <p class="fs-3 fw-semibold mb-0 textors">airshoesstore28@gmail.com</p>
+                  </div>
+                </div>
+            
+                <!-- Logo -->
+                <div class="col-sm-4 d-flex justify-content-end">
+                  <img src="./assets/img/otherlogo.jpg" alt="Logo AirShoes" id="otherlogo" style="max-width: 300px; height: auto;">
+                </div>
+            </div>
+
+        </main>
+
+
+
+        <footer class="container-fluid py-4 text-center align-items-center justify-content-center">
+          <p class="fw-semibold fs-5 my-0">© Todos los derechos reservados</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
