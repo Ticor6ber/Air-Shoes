@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Tienda Air Shoes </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+        <header class="container-fluid p-3 d-flex align-items-center position-relative">
+            <img src="./assets/img/logo.jpg" alt="logoAirShoes">
+            <h1 class="fw-bolder position-absolute start-50 translate-middle-x">Air Shoes</h1>
+        </header>
+          <!-- Start of the navbar -->
+          
+          <nav class="container-fluid p-3 align-items-center" id="navbar">
+
+          <button type="button" class="btn btn-light fw-bold text-wrap py-1 me-3" id="home">
+            <img src="./assets/img/home.svg">
+            Inicio
+          </button>
+          <button type="button" class="btn btn-light fw-bold text-wrap py-1 me-3" id="products">
+            <img src="./assets/img/product.svg">
+            Productos
+          </button>
+          <button type="button" class="btn btn-light fw-bold text-wrap py-1 me-auto" id="contact">
+            <img src="./assets/img/contact.svg">
+            Contáctanos
+          </button>
+
+          <!-- Start of searchbar by BS5-->
+              <form class="d-flex" role="search" id="searchbar">
+                <button class="me-2" type="submit" id="search">
+                  <img src="./assets/img/search.svg">
+                </button>
+                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search"/>
+              </form>
+          <!-- End of searchbar by BS5-->
+        
+          </nav>
+
+          <!-- End of the navbar -->
+
+          <!-- Start of the hide and show navbar button-->
+
+          <div class="container-fluid p-2" id="handsnavbar">
+            <button class="boton">
+              <img src="./assets/img/arrow.svg">
+            </button>
+          </div>
+
+            <main class="container-fluid p-2">
+
+                <!--Start of the shopping cart-->
+                <button type="button" class="btn btn-primary p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" id="shoppingcart">
+                  <img src="./assets/img/shopping cart.svg">
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End of the shopping cart-->
+
+                <button class="itemofproducts brand-btn" id="nikeb" data-target="nike">
+                    Nike
+                    <img src="./assets/img/arrow.svg">
+                </button>
+                
+
+                <div class="container-fluid carrusel py-4 px-0 align-items-center justify-content-evenly brand-list" id="nike">
+
+                  <!-- Flecha izquierda -->
+                  <button class="arrow-btn left me-1">
+                    <img src="./assets/img/arrow.svg" class="arrow-icon rotate-left">
+                  </button>
+              
+                  <!-- Contenedor de cards -->
+                  <div class="cards-wrapper container-fluid d-flex px-1 mx-0 align-items-center justify-content-evenly" id="cardContainer">
+                    <!-- Card -->
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Duplica más cards -->
+                  </div>
+              
+                  <!-- Flecha derecha -->
+                  <button class="arrow-btn right ms-1">
+                    <img src="./assets/img/arrow.svg" class="arrow-icon rotate-right">
+                  </button>
+              
+                </div>
+
+                <button class="itemofproducts brand-btn" id="adidasb" data-target="adidas">
+                    Adidas
+                    <img src="./assets/img/arrow.svg">
+                </button>
+
+                <div class="container-fluid carrusel py-4 px-0 align-items-center justify-content-evenly brand-list" id="adidas">
+
+                  <!-- Flecha izquierda -->
+                  <button class="arrow-btn left me-1">
+                    <img src="./assets/img/arrow.svg" class="arrow-icon rotate-left">
+                  </button>
+              
+                  <!-- Contenedor de cards -->
+                  <div class="cards-wrapper container-fluid d-flex px-1 mx-0 align-items-center justify-content-evenly" id="cardContainer">
+                    <!-- Card -->
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-6 fw-bold text-start">Nike Air Force 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-between align-items-center px-1 py-0 rounded-bottom">
+                          <p class="fs-6 fw-semibold m-0">$100.000</p>
+                          <a href="#"><img src="./assets/img/cartplus.svg" class="cart-product"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Duplica más cards -->
+                  </div>
+              
+                  <!-- Flecha derecha -->
+                  <button class="arrow-btn right ms-1">
+                    <img src="./assets/img/arrow.svg" class="arrow-icon rotate-right">
+                  </button>
+              
+                </div>
+                     
+            </main>
+
+
+        <footer class="container-fluid py-4 text-center align-items-center justify-content-center">
+          <p class="fw-semibold fs-5 my-0">© Todos los derechos reservados</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
